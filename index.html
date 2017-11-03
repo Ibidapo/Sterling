@@ -10,114 +10,248 @@
     <!-- Custom CSS file -->
     <link rel="stylesheet" href="css/design.css">
     <link rel="stylesheet" href="css/docs.css">
-
 </head>
 <body style="font-family:century gothic">
-<div class="container-fluid">
- <div class="row" style="color:white">
-    <!--slider division -->
-    <div class="col-12 col-sm-9" style="padding:0px">
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="d-block w-100" src="images/bannerq.png" alt="First slide">
+    <!-- Mobile Navigation -->
+    <nav class="container-fluid mob-nav fixed-top d-lg-none">
+        <div id="menu">
+            <span class="top"></span>
+            <span class="middle"></span>
+            <span class="bottom"></span>
+        </div>
+        <a href="#" class="d-block m-logo mx-auto text-center navbar-brand">
+            <img class="img-fluid" src="images/logo.png"/>
+        </a>
+        <div class="mob-icon-nav d-inline-block">
+            <a class="sub-icon d-block" href="#"><img class="img-fluid" src="images/login.png"/> Login</a>
+            <a class="sub-icon d-block" href="#"><img class="img-fluid" src="images/phone.png"/> Help Desk</a>
+        </div>
+        <div class="row bottom-nav">
+            <div class="col-12 marquee">
+                <div class="search-container">
+                    <form>
+                        <input class="search" id="m-search" type="search" placeholder="Search...">
+                        <label class="button searchbutton" for="m-search"><span class="mglass">&#9906;</span></label>
+                    </form>
                 </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="images/landing.jpg" alt="Second slide">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="images/landing.jpg" alt="Third slide">
-                </div>
+                <p>RSA FUND  N3.6331&nbsp;&nbsp;RETIREE FUND  N3.6331&nbsp;&nbsp;ADMINISTRATIVE FEE N100&nbsp;&nbsp;
+                REGISTERED RSA  263,432&nbsp;&nbsp;</p>
+                <div class="mob-trend"><a class="btn btn-light" href="#">View Trends</a></div>
             </div>
         </div>
-
-    </div>
-    <!-- icon shelf division -->
-    <div class="col-12 col-sm-3 text-center" style="background-color:#ca2d32">
-
+        <div class="overlay text-center" id="overlay">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Products & Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Company Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Fund Practices</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Online Enrollment</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Client Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Get-in-touch</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Desktop Navigation -->
+    <nav class="container-fluid top-nav d-none d-lg-block fixed-top">
         <div class="row">
-            <div class="col-12" >
-               <div class="row">
-
-               <div class="col-12 col-sm-9 offset-sm-2" >
-                  <h6 style="font-size:11px; margin: 45px 0 10px 0px"> Top 3 reasons to open a <span style="font-weight:bold">Crusader RSA </span> </h6>
-               </div>
-                   <div class="col-12 bottom-border">
-                 <div class="row">
-                     <div class="col-12 col-sm-2">
-                         <img src="images/1.png">
-                     </div>
-                     <div class="col-12 col-sm-10">
-                              <figure class="align">
-                                  <fig>
-                                  <img src="images/high-returns.png">
-                                  </fig>
-                                  <figcaption>
-                                      High Returns
-                                  </figcaption>
-                              </figure>
-                   </div>
-               </div>
+            <div class="col-md-2 text-center">
+                <a class="navbar-brand logo" href="#"><img class="img-fluid" src="images/logo.png"/></a>
             </div>
-
+            <div class="col-md-9">
+                <ul class="nav nav-fill">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Products & Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Company Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Fund Practices</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav-link">
+                            <div class="clockarea mx-auto">
+                                <div class="clock">
+                                    <div id="hour" class="hourhand"></div>
+                                    <div id="minute" class="minutehand"></div>
+                                    <div id="second" class="secondhand"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Online Enrollment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Client Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Get-in-touch</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-1 text-center" style="padding-top: .5rem;">
+                <a href="#"><img class="img-fluid" src="images/pencom.png"/></a>
+            </div>
         </div>
-
-    </div>
-            <div class="col-12" style="background-color:#cc7174;height:2px;box-shadow: #000000 2px 1px 5px ">
+        <div class="row bottom-nav">
+            <div class="col-md-2 text-center">
+                <a class="sub-icon" href="#"><img class="img-fluid" src="images/login.png"/> Login</a>
+                <a class="sub-icon" href="#"><img class="img-fluid" src="images/phone.png"/> Help Desk</a>
+            </div>
+            <div class="col-md-8 marquee">
+                <p>RSA FUND  N3.6331&nbsp;&nbsp;&nbsp;RETIREE FUND  N3.6331&nbsp;&nbsp;&nbsp;ADMINISTRATIVE FEE  N100&nbsp;&nbsp;&nbsp;
+                REGISTERED RSA  263,432&nbsp;&nbsp;&nbsp;</p>
+            </div>
+            <div class="col-md-2" style="padding: 0">
+                <div class="trend">
+                    <div class="text-center">27th October, 2017.</div>
+                    <div class="text-center"><a class="btn btn-outline-light" href="#">View Trends</a></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid main">
+        <div class="row" style="color:white">
+            <!--slider division -->
+            <div class="col-12 col-sm-9" style="padding:0px">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="images/bannerq.png" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="images/landing.jpg" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="images/landing.jpg" alt="Third slide">
+                        </div>
+                    </div>
+                </div>
 
             </div>
-            <div class="col-12">
+            <!-- icon shelf division -->
+            <div class="col-12 col-sm-3 text-center" style="background-color:#ca2d32">
+
                 <div class="row">
-                    <div class="col-12 col-sm-2">
-                        <img src="images/2.png">
+                    <div class="col-12" >
+                        <div class="row">
+
+                            <div class="col-12 col-sm-9 offset-sm-2" >
+                                <h6 style="font-size:11px; margin: 45px 0 10px 0px"> Top 3 reasons to open a <span style="font-weight:bold">Crusader RSA </span> </h6>
+                            </div>
+                            <div class="col-12 bottom-border">
+                                <div class="row">
+                                    <div class="col-12 col-sm-2">
+                                        <img src="images/1.png">
+                                    </div>
+                                    <div class="col-12 col-sm-10">
+                                        <figure class="align">
+                                            <fig>
+                                                <img src="images/high-returns.png">
+                                            </fig>
+                                            <figcaption>
+                                                High Returns
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
                     </div>
-                    <div class="col-12 col-sm-10">
-                        <figure class="align">
-                            <fig>
-                                <img src="images/efficient.png">
-                            </fig>
-                            <figcaption>
-                                Efficiency oriented
-                            </figcaption>
-                        </figure>
+                    <div class="col-12" style="background-color:#cc7174;height:2px;box-shadow: #000000 2px 1px 5px ">
+
+                    </div>
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-12 col-sm-2">
+                                <img src="images/2.png">
+                            </div>
+                            <div class="col-12 col-sm-10">
+                                <figure class="align">
+                                    <fig>
+                                        <img src="images/efficient.png">
+                                    </fig>
+                                    <figcaption>
+                                        Efficiency oriented
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12" style="background-color:#cc7174;height:2px;box-shadow: #000000 2px 1px 5px ">
+                    </div>
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-12 col-sm-2">
+                                <img src="images/3.png">
+                            </div>
+                            <div class="col-12 col-sm-10">
+                                <figure class="align">
+                                    <fig>
+                                        <img src="images/culture.png">
+                                    </fig>
+                                    <figcaption>
+                                        Great Culture
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12" style="background-color:#cc7174;height:2px;box-shadow: #000000 2px 1px 5px ">
                     </div>
                 </div>
             </div>
-            <div class="col-12" style="background-color:#cc7174;height:2px;box-shadow: #000000 2px 1px 5px ">
-            </div>
-            <div class="col-12">
-                <div class="row">
-                    <div class="col-12 col-sm-2">
-                        <img src="images/3.png">
-                    </div>
-                    <div class="col-12 col-sm-10">
-                        <figure class="align">
-                            <fig>
-                                <img src="images/culture.png">
-                            </fig>
-                            <figcaption>
-                                Great Culture
-                            </figcaption>
-                        </figure>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12" style="background-color:#cc7174;height:2px;box-shadow: #000000 2px 1px 5px ">
-            </div>
- </div>
-</div>
-     </div>
+        </div>
     </div>
 
     <footer class="container"></footer>
-     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-
-     <script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment.min.js"></script>
+    <script>
         $('.carousel').carousel({
-  interval: 2000
-})
-      </script>
+            interval: 2000
+        })
+    </script>
+    <script>
+        $(function()
+        {
+            setInterval(function()
+            {
+                var now = moment(),
+                        second = now.seconds() * 6,
+                        minute = now.minutes() * 6 + second / 60,
+                        hour = ((now.hours() % 12) / 12) * 360 + 90 + minute / 12;
+
+                $('.hourhand').css("transform", "rotate(" + hour + "deg)");
+                $('.minutehand').css("transform", "rotate(" + minute + "deg)");
+                $('.secondhand').css("transform", "rotate(" + second + "deg)");
+
+                //Display date and time just below our clock
+                $('.currentDateTime').text(moment().format('MMM DD YYYY HH:mm:ss'));
+
+            }, 1000);
+        });
+
+        $('#menu').click(function() {
+            $(this).toggleClass('active');
+            $('#overlay').toggleClass('open');
+        });
+    </script>
 </body>
 </html>
