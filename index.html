@@ -120,21 +120,55 @@
                 <div class="col-12 text-center" id="help-text">
                     <h4> How can <span style="font-weight:700"> we help you </span> today? </h4>
                 </div>
-                <div class="col-12 relative" style="top:54px" >
-                    <div class="col-12 col-md-4">
-                        <div class="card text-center flat-card">
-                            <img class="card-img-top" src="images/open-rsa.png" alt="Card image cap">
-                            <div class="card-body">
-                                <h4 class="card-title card-title-text"> Open an RSA </h4>
-                                <p class="card-text card-center-text"> Saving for the future is always a good idea.
-                                    Lets get you started right away. You can Create a
-                                    new account or transfer your existing account</p>
-                                <a href="#" class="btn btn-primary flat-button"> Get started </a>
+                <div class="col-12 relative" style="top:32px">
+                    <div class="row" style="padding:10px">
+                        <div class="col-12 col-md-4">
+                            <div class="card text-center relative flat-cardA">
+                                <img class="card-img-top" src="images/open-rsa.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title card-title-text" id="card-title-textA"> Open a Crusader RSA </h4>
+                                    <p class="card-text card-center-text" id="card-center-textA"> Saving for the future is always a good idea.
+                                        Lets get you started right away. You can Create a
+                                        new account or transfer your existing account</p>
+                                    <a href="#" class="btn btn-primary flat-button" id="flat-buttonA"> Get started </a>
+                                    <a href="#" class="btn btn-primary flat-button" id="flat-buttonB"> Get started </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card two -->
+                        <div class="col-12 col-md-4">
+                            <div class="card text-center flat-cardA1">
+                                <img class="card-img-top" src="images/open-rsa.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title card-title-text" id="card-title-textA1"> Retrieve account statement </h4>
+                                    <p class="card-text card-center-text" id="card-center-textA1"> Saving for the future is always a good idea.
+                                        Lets get you started right away. You can Create a
+                                        new account or transfer your existing account</p>
+                                    <a href="#" class="btn btn-primary" id="flat-buttonA1"> Start here </a>
+                                    <a href="#" class="btn btn-primary" id="flat-buttonB1"> Start here </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- card three -->
+                        <div class="col-12 col-md-4">
+                            <div class="card text-center flat-cardA2">
+                                <img class="card-img-top" src="images/open-rsa.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title card-title-text" id="card-title-textA2"> How much can I save in 10years ? </h4>
+                                    <p class="card-text card-center-textA2" id="card-center-textA2"> Saving for the future is always a good idea.
+                                        Lets get you started right away. You can Create a
+                                        new account or transfer your existing account</p>
+                                    <a href="#" class="btn btn-primary" id="flat-buttonA2"> Calculate now </a>
+                                    <a href="#" class="btn btn-primary" id="flat-buttonB2"> Calculate now </a>
+                                </div>
                             </div>
                         </div>
 
                     </div>
+
                 </div>
+
             </div>
         </div>
     </div>
@@ -145,6 +179,8 @@
                 <!-- overlay -->
                 <div class="overlay app-label-position">
                     <h6 style="font-weight:600"> E-Benefits application </h6>
+                    <a href="#" class="btn btn-primary" id="xplore-buttonA"> Explore now </a>
+
                 </div>
 
 
@@ -153,6 +189,7 @@
                     <!-- overlay -->
                     <div class="overlay app-label-position">
                         <h6 style="font-weight:600"> Crusader Multifund </h6>
+                        <a href="#" class="btn btn-primary" id="xplore-buttonA1"> Explore now </a>
                     </div>
                 </div>
             </div>
@@ -160,17 +197,113 @@
     </div>
 
     <!-- section 1 end -->
+    <div class="row" style="height:200px;background-color:white">
+
+    </div>
     </div>
 
     <footer class="container"></footer>
-     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-
      <script>
         $('.carousel').carousel({
   interval: 2000
 })
       </script>
+   <script>
+
+       var headingA = document.getElementById('card-title-textA');
+       var bodyA = document.getElementById('card-center-textA');
+       var headingB = document.getElementById('card-title-textA1');
+       var bodyB =   document.getElementById('card-center-textA1');
+       var headingC = document.getElementById('card-title-textA2');
+       var bodyC =   document.getElementById('card-center-textA2');
+       var xploreA = document.getElementById('xplore-buttonA');
+       var xploreA1 = document.getElementById('xplore-buttonA1');
+
+
+     $('.flat-cardA').mouseover(function(){
+      headingA.style.color = '#b0b1b3';
+       $("#flat-buttonA").fadeOut('fast', function(){
+          bodyA.style.color = '#b0b1b3';
+     });
+     $("#card-center-textA").fadeIn(500, function(){
+       $("#flat-buttonB").fadeIn(600)
+       });
+ });
+
+ $('.flat-cardA').mouseleave(function(){
+         $("#flat-buttonB").fadeOut(500, function(){
+          $("#card-center-textA").fadeOut(500, function(){
+          headingA.style.color = '#ffffff';
+          $("#flat-buttonA").fadeIn();
+          });
+          });
+        });
+
+
+
+
+
+    $('.flat-cardA1').mouseover(function(){
+      headingB.style.color = '#b0b1b3';
+       $("#flat-buttonA1").fadeOut('fast', function(){
+          bodyB.style.color = '#b0b1b3';
+     });
+     $("#card-center-textA1").fadeIn(500, function(){
+       $("#flat-buttonB1").fadeIn(600)
+       });
+ });
+
+ $('.flat-cardA1').mouseleave(function(){
+         $("#flat-buttonB1").fadeOut(500, function(){
+          $("#card-center-textA1").fadeOut(500, function(){
+          headingB.style.color = '#ffffff';
+          $("#flat-buttonA1").fadeIn();
+          });
+          });
+        });
+
+
+    $('.flat-cardA2').mouseover(function(){
+      headingC.style.color = '#b0b1b3';
+       $("#flat-buttonA2").fadeOut('fast', function(){
+          bodyC.style.color = '#b0b1b3';
+     });
+     $("#card-center-textA2").fadeIn(500, function(){
+       $("#flat-buttonB2").fadeIn(600)
+       });
+ });
+
+ $('.flat-cardA2').mouseleave(function(){
+         $("#flat-buttonB2").fadeOut(500, function(){
+          $("#card-center-textA2").fadeOut(500, function(){
+          headingC.style.color = '#ffffff';
+          $("#flat-buttonA2").fadeIn();
+          });
+          });
+        });
+
+
+
+       $('#e-benefits').mouseover(function(){
+          $('#xplore-buttonA').fadeIn(1000, function(){
+           $('#e-benefits').mouseleave(function(){
+            $('#xplore-buttonA').fadeOut(500)
+           });
+          });
+        });
+
+        $('#multifund').mouseover(function(){
+          $('#xplore-buttonA1').fadeIn(1000, function(){
+           $('#multifund').mouseleave(function(){
+            $('#xplore-buttonA1').fadeOut(500)
+           });
+          });
+        });
+
+
+     </script>
 </body>
 </html>
