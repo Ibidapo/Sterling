@@ -1,8 +1,8 @@
 /* Styling for Navbar */
 .top-nav, .mob-nav {
     background-color: #f2f2f2;
-    box-shadow: 0 5px 10px #1b1b1b80;
-    z-index: 1;
+    box-shadow: 0 5px 10px #1b1b1b;
+    z-index: 100;
 }
 .top-nav ul .nav-item:first-child, .top-nav ul .nav-item:nth-child(2), .top-nav ul .nav-item:nth-child(3),
 .top-nav ul .nav-item:nth-child(5), .top-nav ul .nav-item:nth-child(6), .top-nav ul .nav-item:nth-child(7){
@@ -17,6 +17,12 @@
 .logo {
     padding: 0;
     margin: 0;
+}
+
+.menu{
+   position: relative;
+    left: -27px;
+    bottom: -10px;
 }
 .bottom-nav {
     border-top: 1px solid #ca2d3280;
@@ -40,7 +46,8 @@
     border-top-left-radius: 20px;
     width: 100%;
     height: inherit;
-    bottom: -1px;
+    bottom: 0px;
+    left: -15px;
     color: white;
     font-size: .75rem;
     padding-top: .5rem;
