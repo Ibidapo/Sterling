@@ -320,6 +320,16 @@
     font-size: 1.25rem;
 }
 
+/*Styling for Footer*/
+footer {
+    padding: 7.5% 5% !important;
+    background:  #f2f2f2;
+}
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
 /*Styling for Main Body*/
 .main {
     margin-top: 126px;
