@@ -345,7 +345,7 @@
                 <div class="overlay-app">
                 <div class="app-label-position">
 
-                    <h6 style="font-weight:600"> E-Benefits application </h6>
+                    <h6 class='overlay-app-text'style="font-weight:600"> E-Benefits application </h6>
                     <a href="#" class="btn btn-primary" id="xplore-buttonA"> Explore now </a>
                 </div>
               </div>
@@ -355,7 +355,7 @@
                 <!-- overlay -->
                 <div class="overlay-appA1">
                 <div class="app-label-position">
-                    <h6 style="font-weight:600"> Crusader Multifund </h6>
+                    <h6 class="overlay-app-textA1" style="font-weight:600"> Crusader Multifund </h6>
                     <a href="#" class="btn btn-primary" id="xplore-buttonA1"> Explore now </a>
                 </div>
                     </div>
@@ -589,23 +589,30 @@
 
           $('.overlay-appA1').css('position','absolute').css('z-index','10').css('background-color','rgba(202,45,50,0.5)').css('transition', 'ease-in-out 1s').css('width', '100%').css('height', '100%').css('transition', 'ease-in-out 1s').css('top', '0').css('left','0').animate({
              },function(){
-       $('#xplore-buttonA1').fadeIn(1000, function(){
+             $('.overlay-app-textA1').css('color','white').animate({}, function(){
+             $('#xplore-buttonA1').fadeIn(1000, function(){
 
        $('#multifund').mouseleave(function(){
+        $('.overlay-app-textA1').css('color','black');
           $('.overlay-appA1').css('background-color', 'transparent' ).animate({}, function(){
             $('#xplore-buttonA1').fadeOut(500)
             });
           });
        });
+
+             });
+
      });
    });
 
     $('#e-benefits').mouseover(function(){
           $('.overlay-app').css('position','absolute').css('z-index','10').css('background-color','rgba(202,45,50,0.5)').css('transition', 'ease-in-out 1s').css('width', '100%').css('height', '50%').css('transition', 'ease-in-out 1s').css('top', '0').css('left','0').animate({
              },function(){
-       $('#xplore-buttonA').fadeIn(1000, function(){
+           $('.overlay-app-text').css('color','white').animate({}, function(){
+             $('#xplore-buttonA').fadeIn(1000, function(){
 
        $('#e-benefits').mouseleave(function(){
+       $('.overlay-app-text').css('color','black');
           $('.overlay-app').css('background-color', 'transparent' ).animate({}, function(){
             $('#xplore-buttonA').fadeOut(500)
             });
@@ -613,6 +620,7 @@
        });
      });
    });
+ });
     $('#multifund').mouseover(function(){
         $('#xplore-buttonA1').fadeIn(1000, function(){
             $('#multifund').mouseleave(function(){

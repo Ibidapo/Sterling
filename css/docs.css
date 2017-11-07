@@ -111,6 +111,11 @@ background-size: cover;
 cursor: pointer;
 }
 
+.overlay-app-text, .overlay-app-textA1{
+font-weight: 600;
+color:black
+}
+
 .app-head-text{
  margin: 6% 0 0 0;
  font-size: 45px;
