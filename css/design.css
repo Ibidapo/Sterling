@@ -50,6 +50,7 @@
     font-size: .75rem;
     padding-top: .5rem;
     padding-bottom: .375rem;
+    left: -15px;
 }
 .marquee {
     overflow: hidden;
