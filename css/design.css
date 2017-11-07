@@ -325,6 +325,51 @@
     font-size: 1.25rem;
 }
 
+/*Styling for Notification*/
+.notification {
+    position: fixed;
+    top: 126px;
+    right: 0;
+    width: 0;
+    height: 120px;
+    background-color: black;
+    border-bottom-left-radius: 1.25rem;
+    -webkit-transition: width 1s ease;
+    -moz-transition: width 1s ease;
+    -o-transition: width 1s ease;
+    transition: width 1s ease;
+}
+.notification.open {
+    width: 225px;
+}
+.note-hd {
+    font-size: .75rem;
+    margin: .5rem;
+    width: 225px;
+}
+.media {
+    width: 225px;
+}
+.media img {
+    background-color: #9c9d9f;
+    width: 60px;
+    height: 60px;
+    margin: .5rem;
+    border-radius: 50%;
+}
+.media-body {
+    font-size: .6rem;
+    margin-right: .25rem;
+}
+.media-hd {
+    font-weight: 600;
+    font-size: .675rem;
+    margin-bottom: 0 !important;
+}
+.media p{
+    margin-bottom: .25rem;
+}
+
 /*Styling for Footer*/
 .footer-top {
     padding: 7.5% 5% 3.75% !important;
