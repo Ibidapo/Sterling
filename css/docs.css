@@ -18,6 +18,11 @@ font-size:11px;
 margin: 0 0 10px 0px
 }
 
+.xplore{
+padding: 12px 21px 12px 21px;
+margin-top: 1%
+}
+
 .app-height{
 height: 212px;
 width: 100%;
@@ -94,11 +99,16 @@ padding: 0px 5px 0px 5px;
 #e-benefits{
 background: url(../images/e-benefits.jpg) no-repeat;
 background-size: cover;
+
 }
 
 #multifund{
 background: url(../images/multifund.jpg) no-repeat;
 background-size: cover;
+}
+
+#e-benefits, #multifund {
+cursor: pointer;
 }
 
 .app-head-text{
