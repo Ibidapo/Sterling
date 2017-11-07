@@ -32,7 +32,7 @@
 .sub-icon {
     font-size: .5rem;
     color: #000;
-    margin-left: 1rem;
+    margin-left: 0.8rem;
     margin-bottom: -.5rem;
 }
 .sub-icon img {
@@ -329,7 +329,7 @@
 /*Styling for Notification*/
 .notification {
     position: fixed;
-    top: 126px;
+    top: 131px;
     right: 0;
     width: 0;
     height: 120px;
@@ -339,6 +339,7 @@
     -moz-transition: width 1s ease;
     -o-transition: width 1s ease;
     transition: width 1s ease;
+    z-index: 2000
 }
 .notification.open {
     width: 225px;
@@ -422,6 +423,7 @@
     .main {
         margin-top: 96px;
     }
+
 }
 
 @media (max-width: 768px) {

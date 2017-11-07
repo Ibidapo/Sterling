@@ -6,13 +6,16 @@ position: relative;
 left: -6%;
 }
 .shelf-padding{
-padding: 14px 0 10px 0;
+padding: 8px 0 10px 0;
 }
 
 .trend{
 font-size: 10px;
 }
-
+.shelf-block{
+position:relative;
+top:8px;
+}
 .shelf-heading{
 font-size:11px;
 margin: 0 0 10px 0px
@@ -107,7 +110,7 @@ background: url(../images/multifund.jpg) no-repeat;
 background-size: cover;
 }
 
-#e-benefits, #multifund {
+#e-benefits, #multifund, .read-more {
 cursor: pointer;
 }
 
@@ -130,12 +133,86 @@ font-size: 14px;
 color: grey;
 }
 
-@media(max-width:997px){
+.xplore{
+text-align: left;
+}
+
+.cat{
+padding:12px 0 12px;
+color:black
+}
+
+
+
+@media(max-width:1024px){
+.cat{
+font-size: 16px;
+}
+.shelf-padding{
+padding:4px 0px 0px 0px;
+}
+.app-head-text{
+font-size: 38px
+}
+}
+
+@media(max-width:992px){
 #help-bg{
 background:none;
-min-height:1215px
 }
 .align{
 left: 0%;
+}
+.xplore{
+text-align: center !important;
+}
+.shelf-heading{
+font-size: 17px;
+}
+figcaption, .shelf-heading {
+font-size: 10px;
+}
+figure{
+margin: 0 0 0.2rem;
+}
+.shelf-heading{
+margin: 0px 0px 3px 0px;
+}
+.xplore{
+padding: 12px 13px 12px 13px;
+}
+.app-head-text{
+font-size: 28px;
+}
+.shelf-column{
+padding:0px
+}
+}
+@media(max-width: 768px){
+.shelf-padding{
+padding: 9px 0 9px 0 ;
+}
+}
+@media(max-width: 736px){
+.shelf-padding{
+padding: 9px 0 9px 0 ;
+}
+.shelf-icon{
+max-width: 47%
+}
+}
+
+@media(max-width: 667px){
+.shelf-icon{
+max-width: 41% !important
+}
+}
+
+@media(max-width: 568px){
+.shelf-heading, figcaption{
+font-size:22px;
+}
+.shelf-block{
+top: -3px;
 }
 }
