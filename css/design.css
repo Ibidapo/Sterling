@@ -18,7 +18,6 @@
     padding: 0;
     margin: 0;
 }
-
 .menu{
    position: relative;
     left: -27px;
@@ -46,8 +45,7 @@
     border-top-left-radius: 20px;
     width: 100%;
     height: inherit;
-    bottom: 0px;
-    left: -15px;
+    bottom: 0;
     color: white;
     font-size: .75rem;
     padding-top: .5rem;
@@ -327,6 +325,48 @@
     font-size: 1.25rem;
 }
 
+/*Styling for Footer*/
+.footer-top {
+    padding: 7.5% 5% 3.75% !important;
+    background: url(../images/footer-bg.jpg) no-repeat;
+    background-size: cover;
+    color: black;
+}
+.footer-top ul {
+    list-style-type: none;
+    padding: 0;
+    color: #5f656b;
+}
+.footer-top input, .footer-top select {
+    background: transparent;
+    border-top: none;
+    border-left:none;
+    border-right: none;
+    border-radius: 0;
+    color: #868e96;
+}
+.form-control:focus {
+    border-top: none;
+    border-left:none;
+    border-right: none;
+    outline: 0;
+    box-shadow: none;
+}
+.footer-top .fa {
+    margin-right: .5rem;
+    color: #868e96;
+    font-size: 1.25rem;
+}
+.footer-bottom {
+    background-color: #cc7174;
+    min-height: 30px;
+    font-size: 0.75rem;
+}
+.footer-bottom .col-12 {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
 /*Styling for Main Body*/
 .main {
     margin-top: 126px;
@@ -335,5 +375,11 @@
 @media (max-width: 992px) {
     .main {
         margin-top: 96px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-top .col-md-3 {
+        margin-top: 1rem;
     }
 }
