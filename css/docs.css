@@ -23,7 +23,7 @@ margin: 0 0 10px 0px
 
 .xplore{
 padding: 12px 21px 12px 21px;
-margin-top: 1%
+margin-top: 0.5%
 }
 
 .app-height{
@@ -38,16 +38,20 @@ padding: 101px 0px
 position: relative;
 }
 
-#help-bg{
+#help-bg, #help-bgA{
 background: url(../images/help-bg.jpg) no-repeat;
 background-size: cover;
+}
+
+#help-bgA{
+height:400px;
 }
 
 #help-text{
 padding: 30px 0 30px 0;
 }
 
-.flat-cardA, .flat-cardA1, .flat-cardA2{
+.flat-cardA, .flat-cardA1, .flat-cardA2, .flat-cardB, .flat-cardB1, .flat-cardB2 {
 background: none;
 border-top: transparent;
 border-bottom: transparent;
@@ -58,7 +62,7 @@ color:white;
 transition: ease-in-out 1s;
 }
 
-.flat-cardA:hover, .flat-cardA1:hover, .flat-cardA2:hover {
+.flat-cardA:hover, .flat-cardA1:hover, .flat-cardA2:hover, .flat-cardB:hover, .flat-cardB1:hover, .flat-cardB2:hover {
 background: white;
 color: rgba(176,177,179) !important;
 border-radius: 20px;
@@ -75,23 +79,21 @@ box-shadow: #000000 2px 5px 15px;
  background-color: rgba(176,177,179,0.8)/*dim the background*/
 }
 
+#mobile-help{
+background-color: rgba(176,177,179,0.8);
+}
+
 .card-center-text{
 font-size: 12px;
 padding: 0px 5px 0px 5px;
 }
 
-#card-center-textA, #card-center-textA1, #card-center-textA2, #xplore-buttonA, #xplore-buttonA1, #flat-buttonB, #flat-buttonB1, #flat-buttonB2{
+#card-center-textA, #card-center-textA1, #card-center-textA2, #card-center-textB, #card-center-textB1, #card-center-textB2, #xplore-buttonA, #xplore-buttonA1, #flat-buttonB, #flat-buttonB1, #flat-buttonB2, #flat-buttonC, #flat-buttonC1, #flat-buttonC2{
  display:none;
 }
 
-#flat-buttonA, #flat-buttonA1, #flat-buttonA2, #xplore-buttonA, #xplore-buttonA1 {
-    background-color: transparent !important;
-    border-color: white;
-    color: white;
-    border-radius: 20px;
-}
 
-#flat-buttonB, #flat-buttonB1, #flat-buttonB2, .xplore {
+#flat-buttonB, #flat-buttonB1, #flat-buttonB2, #flat-buttonC, #flat-buttonC1, #flat-buttonC2, .xplore {
     background-color: transparent !important;
     border-color: #b0b1b3;
     color: #b0b1b3;
@@ -154,12 +156,15 @@ padding:4px 0px 0px 0px;
 .app-head-text{
 font-size: 38px
 }
+.trend{
+left:-31px;
+}
+.card-title-text{
+font-size: 1.2rem;
+}
 }
 
 @media(max-width:992px){
-#help-bg{
-background:none;
-}
 .align{
 left: 0%;
 }
@@ -192,6 +197,19 @@ padding:0px
 .shelf-padding{
 padding: 9px 0 9px 0 ;
 }
+.help-box{
+ top: 6%;
+}
+.card-title-text{
+font-size: 0.8rem;
+}
+.card-center-text{
+font-size: 10px;
+padding: 0px;
+}
+.flat-button{
+font-size:0.8rem;
+}
 }
 @media(max-width: 736px){
 .shelf-padding{
@@ -199,6 +217,10 @@ padding: 9px 0 9px 0 ;
 }
 .shelf-icon{
 max-width: 47%
+}
+
+#help-text{
+padding: 20px 0 20px 0;
 }
 }
 
