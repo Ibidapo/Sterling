@@ -424,6 +424,9 @@
         margin-top: 96px;
     }
 
+    .notification{
+    top:99px;
+    }
 }
 
 @media (max-width: 768px) {
