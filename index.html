@@ -417,29 +417,29 @@
                 <div class="col-12 relative">
                     <div class="row" style="padding:10px">
                         <div class="col-sm-4">
-                            <div class="card text-center relative flat-cardB">
+                            <div class="card text-center relative flat-cardC">
                                 <img class="card-img-top" src="images/open-rsa.png" alt="Card image cap">
                                 <div class="card-body">
-                                    <h4 class="card-title card-title-text" id="card-title-textB"> Open a Crusader RSA </h4>
-                                    <p class="card-text card-center-text" id="card-center-textB"> Saving for the future is always a good idea.
+                                    <h4 class="card-title card-title-text" id="card-title-textC"> Open a Crusader RSA </h4>
+                                    <p class="card-text card-center-text" id="card-center-textC"> Saving for the future is always a good idea.
                                         Lets get you started right away. You can Create a
                                         new account or transfer your existing account</p>
 
-                                    <a href="#" class="btn btn-primary flat-button" id="flat-buttonC"> Get started </a>
+                                    <a href="#" class="btn btn-primary flat-button" id="flat-buttonD"> Get started </a>
                                 </div>
                             </div>
                         </div>
                         <!-- card two -->
                         <div class="col-sm-4">
-                            <div class="card text-center flat-cardB1">
+                            <div class="card text-center flat-cardC1">
                                 <img class="card-img-top" src="images/open-rsa.png" alt="Card image cap">
                                 <div class="card-body">
-                                    <h4 class="card-title card-title-text" id="card-title-textB1"> Retrieve account statement </h4>
-                                    <p class="card-text card-center-text" id="card-center-textB1"> Saving for the future is always a good idea.
+                                    <h4 class="card-title card-title-text" id="card-title-textC1"> Retrieve account statement </h4>
+                                    <p class="card-text card-center-text" id="card-center-textC1"> Saving for the future is always a good idea.
                                         Lets get you started right away. You can Create a
                                         new account or transfer your existing account</p>
 
-                                    <a href="#" class="btn btn-primary" id="flat-buttonC1"> Start here </a>
+                                    <a href="#" class="btn btn-primary" id="flat-buttonD1"> Start here </a>
 
                                 </div>
                             </div>
@@ -447,15 +447,15 @@
 
                         <!-- card three -->
                         <div class="col-12 col-sm-4">
-                            <div class="card text-center flat-cardB2">
+                            <div class="card text-center flat-cardC2">
                                 <img class="card-img-top" src="images/open-rsa.png" alt="Card image cap">
                                 <div class="card-body">
-                                    <h4 class="card-title card-title-text" id="card-title-textB2"> How much can I save in 10years ? </h4>
-                                    <p class="card-text card-center-text" id="card-center-textB2"> Saving for the future is always a good idea.
+                                    <h4 class="card-title card-title-text" id="card-title-textC2"> How much can I save in 10years ? </h4>
+                                    <p class="card-text card-center-text" id="card-center-textC2"> Saving for the future is always a good idea.
                                         Lets get you started right away. You can Create a
                                         new account or transfer your existing account</p>
 
-                                    <a href="#" class="btn btn-primary" id="flat-buttonC2"> Calculate now </a>
+                                    <a href="#" class="btn btn-primary" id="flat-buttonD2"> Calculate now </a>
                                 </div>
                             </div>
                         </div>
@@ -670,6 +670,12 @@
     var bodyE =   document.getElementById('card-center-textB1');
     var headingF = document.getElementById('card-title-textB2');
     var bodyF =   document.getElementById('card-center-textB2');
+    var headingG = document.getElementById('card-title-textC');
+    var bodyG =   document.getElementById('card-center-textC');
+    var headingH = document.getElementById('card-title-textC1');
+    var bodyH =   document.getElementById('card-center-textC1');
+    var headingI = document.getElementById('card-title-textC2');
+    var bodyI =   document.getElementById('card-center-textC2');
     var xploreA = document.getElementById('xplore-buttonA');
     var xploreA1 = document.getElementById('xplore-buttonA1');
     var multifund = document.getElementById('multifund');
@@ -778,7 +784,62 @@
             });
         });
     });
+    
+    
+          $('.flat-cardC').mouseover(function(){
+        headingG.style.color = '#b0b1b3';
+            bodyG.style.color = '#b0b1b3';
 
+        $("#card-center-textC").fadeIn(500, function(){
+            $("#flat-buttonD").fadeIn(600)
+        });
+    });
+
+    $('.flat-cardC').mouseleave(function(){
+        $("#flat-buttonD").fadeOut(200, function(){
+            $("#card-center-textC").fadeOut(500, function(){
+                headingG.style.color = '#ffffff';
+            });
+        });
+    });
+    
+    
+              $('.flat-cardC1').mouseover(function(){
+        headingH.style.color = '#b0b1b3';
+            bodyH.style.color = '#b0b1b3';
+
+        $("#card-center-textC1").fadeIn(500, function(){
+            $("#flat-buttonD1").fadeIn(600)
+        });
+    });
+
+    $('.flat-cardC1').mouseleave(function(){
+        $("#flat-buttonD1").fadeOut(200, function(){
+            $("#card-center-textC1").fadeOut(500, function(){
+                headingH.style.color = '#ffffff';
+            });
+        });
+    });
+
+
+          $('.flat-cardC2').mouseover(function(){
+        headingI.style.color = '#b0b1b3';
+            bodyI.style.color = '#b0b1b3';
+
+        $("#card-center-textC2").fadeIn(500, function(){
+            $("#flat-buttonD2").fadeIn(600)
+        });
+    });
+
+    $('.flat-cardC2').mouseleave(function(){
+        $("#flat-buttonD2").fadeOut(200, function(){
+            $("#card-center-textC2").fadeOut(500, function(){
+                headingG.style.color = '#ffffff';
+            });
+        });
+    });
+    
+    
 
         $('#multifund').mouseover(function(){
 

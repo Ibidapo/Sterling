@@ -51,7 +51,7 @@ height:400px;
 padding: 30px 0 30px 0;
 }
 
-.flat-cardA, .flat-cardA1, .flat-cardA2, .flat-cardB, .flat-cardB1, .flat-cardB2 {
+.flat-cardA, .flat-cardA1, .flat-cardA2, .flat-cardB, .flat-cardB1, .flat-cardB2, .flat-cardC, .flat-cardC1, .flat-cardC2 {
 background: none;
 border-top: transparent;
 border-bottom: transparent;
@@ -62,7 +62,7 @@ color:white;
 transition: ease-in-out 1s;
 }
 
-.flat-cardA:hover, .flat-cardA1:hover, .flat-cardA2:hover, .flat-cardB:hover, .flat-cardB1:hover, .flat-cardB2:hover {
+.flat-cardA:hover, .flat-cardA1:hover, .flat-cardA2:hover, .flat-cardB:hover, .flat-cardB1:hover, .flat-cardB2:hover, .flat-cardC:hover, .flat-cardC1:hover, .flat-cardC2:hover {
 background: white;
 color: rgba(176,177,179) !important;
 border-radius: 20px;
@@ -88,12 +88,12 @@ font-size: 12px;
 padding: 0px 5px 0px 5px;
 }
 
-#card-center-textA, #card-center-textA1, #card-center-textA2, #card-center-textB, #card-center-textB1, #card-center-textB2, #xplore-buttonA, #xplore-buttonA1, #flat-buttonB, #flat-buttonB1, #flat-buttonB2, #flat-buttonC, #flat-buttonC1, #flat-buttonC2{
+#card-center-textA, #card-center-textA1, #card-center-textA2, #card-center-textB, #card-center-textB1, #card-center-textB2, #card-center-textC, #card-center-textC1, #card-center-textC2, #xplore-buttonA, #xplore-buttonA1, #flat-buttonB, #flat-buttonB1, #flat-buttonB2, #flat-buttonC, #flat-buttonC1, #flat-buttonC2, #flat-buttonD, #flat-buttonD1, #flat-buttonD2{
  display:none;
 }
 
 
-#flat-buttonB, #flat-buttonB1, #flat-buttonB2, #flat-buttonC, #flat-buttonC1, #flat-buttonC2, .xplore {
+#flat-buttonB, #flat-buttonB1, #flat-buttonB2, #flat-buttonC, #flat-buttonC1, #flat-buttonC2, #flat-buttonD, #flat-buttonD1, #flat-buttonD2, .xplore {
     background-color: transparent !important;
     border-color: #b0b1b3;
     color: #b0b1b3;
